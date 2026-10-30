@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="page-shell">
@@ -39,9 +41,9 @@ export default function Home() {
           CloudPulse helps you keep an eye on your services and make sense of
           incidents, so you can get back to building with confidence.
         </p>
-        <a className="primary-link" href="#service-overview">
-          Explore the overview <span aria-hidden="true">↓</span>
-        </a>
+        <Link className="primary-link" href="/overview">
+          Explore the overview <span aria-hidden="true">↗</span>
+        </Link>
         <section
           id="service-overview"
           className="signal-card"
