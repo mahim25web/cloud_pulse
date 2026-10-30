@@ -4,6 +4,12 @@
   margin: 0 auto;
 }
 
+.overview-shell a:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
 .overview-nav {
   display: flex;
   min-height: 78px;

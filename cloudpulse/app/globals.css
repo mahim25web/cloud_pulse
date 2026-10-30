@@ -30,6 +30,12 @@ a {
   text-decoration: none;
 }
 
+a:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
 .page-shell {
   display: flex;
   width: min(1120px, calc(100% - 64px));
@@ -147,6 +153,10 @@ h1 span {
 .primary-link:hover {
   transform: translateY(-1px);
   background: #9aebd2;
+}
+
+.primary-link:focus-visible {
+  outline-offset: 5px;
 }
 
 .primary-link span {

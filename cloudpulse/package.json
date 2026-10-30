@@ -5,7 +5,7 @@
   "engines": { "node": ">=20" },
   "scripts": {
     "dev": "next dev",
-    "typecheck": "pnpm -r typecheck",
+    "typecheck": "tsc --noEmit",
     "test": "pnpm -r test",
     "build": "next build",
     "start": "next start"

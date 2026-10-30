@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="page-shell">
       <nav className="nav" aria-label="Main navigation">
-        <a className="brand" href="/" aria-label="CloudPulse home">
+        <Link className="brand" href="/" aria-label="CloudPulse home">
           <span className="brand-mark" aria-hidden="true">
             <svg viewBox="0 0 32 32" fill="none">
               <path
@@ -24,7 +24,7 @@ export default function Home() {
             </svg>
           </span>
           <span>CloudPulse</span>
-        </a>
+        </Link>
         <span className="nav-note">Monitoring, made clearer.</span>
       </nav>
 
@@ -41,7 +41,7 @@ export default function Home() {
           CloudPulse helps you keep an eye on your services and make sense of
           incidents, so you can get back to building with confidence.
         </p>
-        <Link className="primary-link" href="/overview">
+        <Link className="primary-link" href="/overview" prefetch={false}>
           Explore the overview <span aria-hidden="true">↗</span>
         </Link>
         <section
@@ -52,7 +52,7 @@ export default function Home() {
           <div className="signal-card-heading">
             <div>
               <span className="card-kicker">SERVICE HEALTH</span>
-              <p>All systems in view</p>
+              <p>Service monitoring preview</p>
             </div>
             <span className="healthy-pill">
               <span className="status-dot" />
@@ -85,7 +85,7 @@ export default function Home() {
             <span>Clear signals, less noise.</span>
             <span className="live-indicator">
               <span className="status-dot" />
-              Ready for what&apos;s next
+              Sample data · not connected
             </span>
           </div>
         </section>
